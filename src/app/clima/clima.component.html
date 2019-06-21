@@ -1,12 +1,15 @@
 <div *ngIf="articulos!=null">
   <table border="1">
     <tr>
-      <td>Temperatura</td><td>Estado</td><td>Humedad</td>
+      <td>Temperatura</td><td>Estado</td><td>Humedad</td><td>Velocidad</td>
+      <td>Pais</td>
     </tr>
     <tr>
       <td>{{articulos.main.temp}}</td>
       <td>{{articulos.weather[0].description}}</td>
       <td>{{articulos.main.humidity}}</td>
+      <td>{{articulos.wind.speed}}</td>
+      <td>{{articulos.sys.country}}</td>
     </tr>
   </table>
 </div>
