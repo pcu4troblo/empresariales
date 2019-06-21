@@ -1,0 +1,16 @@
+#tabla{
+border-collapse: collapse;
+align-self: center;
+width: 100%;
+border: solid;
+}
+#primerColumna{
+    font-weight: bold;
+}
+td, tr{
+    border-collapse: collapse;
+}
+#consulta{
+    width: 100%;
+    align-self: center;
+}
