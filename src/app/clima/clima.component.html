@@ -1,0 +1,14 @@
+<div *ngIf="articulos!=null">
+  <table border="1">
+    <tr>
+      <td>Codigo</td><td>Descripcion</td><td>Precio</td>
+    </tr>
+    <tr>
+      <td>{{articulos.main.temp}}</td>
+      <td>{{articulos.weather[0].description}}</td>
+      <td>{{articulos.main.humidity}}</td>
+    </tr>
+  </table>
+</div>
+  <input type="text" name="ciudad" id="ciudad" #cityValue>
+  <button type="button" (click)='handleSubmit(cityValue)'>Consultar</button>
