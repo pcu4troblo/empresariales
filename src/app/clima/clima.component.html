@@ -1,5 +1,5 @@
 <div *ngIf="articulos!=null">
-  <table id="tabla" border="1">
+  <table id="customers" border="1">
     <tr id="primerColumna">
       <td>Temperatura</td><td>Estado</td><td>Humedad</td><td>Velocidad</td>
       <td>Pais</td>
@@ -14,5 +14,5 @@
   </table>
 </div>
 <form id="consulta">
-  <input type="text" name="ciudad" id="ciudad" #cityValue>
-  <button type="button" (click)='handleSubmit(cityValue)'>Consultar</button></form>
+  <input  type="text" placeholder="Ingrese la ciudad" name="ciudad" id="ciudad" #cityValue><br>
+  <button id="btnCon" type="button" (click)='handleSubmit(cityValue)'>Consultar</button></form>
